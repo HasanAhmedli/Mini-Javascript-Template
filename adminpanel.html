@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Font-->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@popperjs/core@2">
+    <link rel="stylesheet" href="assets/css/adminpanel.css">
+    <link rel="stylesheet" href="assets/css/mystyle.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <button class="menuBtn" id="usersBtn">Users</button>
+        <button class="menuBtn" id="homeBtn">Home</button>
+        <button class="menuBtn" id="productsBtn">Products</button>
+    </div>
+
+
+    <div class="sections">
+        <section id="users">
+                <h2>Users</h2>
+                <div class="buttons">
+                    <button id="usersListBtn">Users lists</button>
+                    <button id="addUserBtn">Add user</button>
+               </div>
+               
+               <div class="addUser">
+                <form action="" id="addUser">
+                    <input type="text" class="form-control" placeholder="First name" autocomplete="off" name="firstname">
+                    <input type="text" class="form-control" placeholder="Last name" autocomplete="off" name="lastname">
+                    <input type="email" class="form-control" name="email" placeholder="Email adress" autocomplete="off">
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                    <input type="submit" class="form-control" value="Add user">
+                </form>
+               </div>
+
+                <div class="usersList">
+                    <table class="table table-bordered" id="table">
+                        <thead>
+                            <tr>
+                                <th>Email</th>
+                                <th>Username</th>
+                                <th>Password</th>
+                                <th>Event</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ramin@mail.ru</td>
+                                <td>Ramin</td>
+                                <td>123132</td>
+                                <td><button class="btn btn-danger btn-sm">Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>ramin@mail.ru</td>
+                                <td>Ramin</td>
+                                <td>123132</td>
+                                <td><button class="btn btn-danger btn-sm">Delete</button></td>
+                            </tr> <tr>
+                                <td>ramin@mail.ru</td>
+                                <td>Ramin</td>
+                                <td>123132</td>
+                                <td><button class="btn btn-danger btn-sm">Delete</button></td>
+                            </tr> <tr>
+                                <td>ramin@mail.ru</td>
+                                <td>Ramin</td>
+                                <td>123132</td>
+                                <td><button class="btn btn-danger btn-sm">Delete</button></td>
+                            </tr> <tr>
+                                <td>ramin@mail.ru</td>
+                                <td>Ramin</td>
+                                <td>123132</td>
+                                <td><button class="btn btn-danger btn-sm">Delete</button></td>
+                            </tr> <tr>
+                                <td>ramin@mail.ru</td>
+                                <td>Ramin</td>
+                                <td>123132</td>
+                                <td><button class="btn btn-danger btn-sm">Delete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </section>
+
+        <section id="home">
+            <h2>Home</h2>
+         </section>
+
+         <section id="products">
+            <h2>Products</h2>
+
+           <div class="buttons">
+                <button id="productListBtn">Product lists</button>
+                <button id="addProductBtn">Add product</button>
+           </div>
+
+            <div class="addProduct">
+                <form action="" id="addProduct">
+                   <div class="row">
+                    <div class="col-6"><input value="" id="productname" class="form-control" type="text" placeholder="Product name"></div>
+                    <div class="col-6"><input value="" id="productcategory" class="form-control" type="text" placeholder="Product Category"></div>
+                    <div class="col-6"><input value="" id="productprice" class="form-control" type="number" placeholder="Product Price"></div>
+                    <div class="col-6"><input value="" id="productcurrency" class="form-control" type="text" placeholder="Product Currency"></div>
+                    <div class="col-6"><input value="" id="productdiscount" class="form-control" type="text" placeholder="Product Discount"></div>
+                    <div class="col-6"><input value="" id="description" class="form-control" type="text" placeholder="Description"></div>
+                    <div class="col-6"><input value="" id="starcount" class="form-control" type="number" placeholder="Star count"></div>
+                    <div class="col-6"><input value="" id="productphoto" class="form-control" type="text" placeholder="Product photo source"></div>
+                    <div class="col-6"><input value="" id="categoryphoto" class="form-control" type="text" placeholder="Category photo source"></div>
+                    <input class="form-control" type="submit" value="Add product">
+                   </div>
+                </form>
+            </div>
+
+            <div class="productList">
+               <div class="table-responsive">
+                <table class="table table-bordered" id="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Currency</th>
+                            <th>Discount</th>
+                            <th>Wishlisted</th>
+                            <th>AddedCard</th>
+                            <th>Compared</th>
+                            <th>Stars</th>
+                            <th>Description</th>
+                            <th>P.Photo</th>
+                            <th>C.Photo</th>
+                            <th>Event</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Clock</td>
+                        <td>Clock</td>
+                        <td>300</td>
+                        <td>0</td>
+                        <td>AZN</td>
+                        <td>false</td>
+                        <td>false</td>
+                        <td>false</td>
+                        <td>0</td>
+                        <td>Clock.</td>
+                        <td></td>
+                        <td></td>
+                        <td><button class="btn btn-danger btn-sm">Delete</button></td>
+
+                      </tr>
+   
+                    </tbody>
+                </table>
+               </div>
+            </div>
+         </section>
+    </div>
+   
+
+    
+
+
+  
+   
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.13.0/firebase-database.js" type="module"></script>
+    <script src="assets/js/adminpanel.js"></script>
+    <script src="./assets/js/adProduct.js" type="module"></script>
+
+
+
+</body>
+
+</html>

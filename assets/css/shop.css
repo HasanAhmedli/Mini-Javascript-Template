@@ -1,0 +1,284 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Ubuntu'; */
+    font-family: Karla;
+}
+
+* {outline: none;}
+
+.svgBox {
+    width: 30px;
+    height: 30px;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+}
+
+.headerLeft div:first-child {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+
+.headerLeft div:last-child {
+    margin-right: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.headerLeft div {
+    margin: 0 10px;
+}
+
+.header {
+    padding: 20px 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.headerTopSection {
+    border-bottom: 1px solid #ddd;
+}
+
+.headerLeftSpan span:first-child {
+    font-weight: bold;
+}
+
+.headerRightList li {
+    display: inline-block;
+    margin: 15px 5px 0 5px;
+}
+
+.headerRightList li a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+#wishListIcon,
+#shoppingIcon {
+    position: relative;
+}
+#wishListIcon,
+#shoppingIcon {
+    position: relative;
+}
+
+.active::after {
+    content: '';
+    width: 100% !important;
+    height: 2px;
+    background-color: #79b38a;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.navBar {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navBar ul {
+    margin: 0;
+
+}
+
+.navBar ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    transition: 1s !important;
+}
+
+.navBar ul li a:hover {
+    opacity: 0.6;
+}
+
+.navBar ul li a:hover::after {
+    width: 100%;
+}
+
+.navBar ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #79b38a;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: 0.3s;
+}
+.shop-first{
+    background-color: #f9f9f9;
+}
+.shop-section a{
+    text-decoration: none;
+    color: black;
+}
+.shop-ul{
+    margin-left: -10%;
+}
+.shop-ul li {
+    margin: 6px;
+     list-style: none;
+}
+.shop-ul li a{
+    color: black;
+    text-decoration: none;
+
+}
+.product-image1{
+    width: 100%;
+}
+.product-image2{
+    width: 26%;
+}
+.hrs{
+    width: 100%
+}
+.button{
+    border: 0;
+    padding: 10px 14px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.p1{
+    padding: 0;
+    margin: 0;
+}
+.euro{
+    color: green;
+    /* margin-left: 80px; */
+}
+.christmas{
+    text-decoration: none;
+    color: black;
+}
+.section_img{
+    width: 90%;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    
+}
+.section_img img{
+    width: 100%;
+    transition: 1s;
+}
+.woodmart-img:hover{
+    transform: scale(1.1);
+}
+.font{
+ position: absolute;
+ top: 0;
+  margin: 30px;
+}
+.button2{
+    border: 0;
+    border-radius: 0;
+    font-size: 12px;
+}
+
+.image-sections{
+    width: 100%;
+   
+}
+
+
+
+.div-class {
+text-align: center;
+}
+.decor{
+    /* margin-left: 120px; */
+    color: gray;
+    text-decoration: none;
+}
+
+
+.background-image{
+    background-image: url(../images/finaly-banner-handmade-11-opt.jpg);
+    height: 170px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+.laoret{
+   padding-left: 90px;
+   padding-top: 40px;
+}
+.container-2{
+    padding: 50px 0;
+}
+#finallyForm{
+    margin-top: 70px;
+    margin-left: 70px;
+}
+footer {
+    padding: 30px 0 10px 0;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    color: #999;
+}
+
+footer section .row ul {
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+
+footer #logo {
+    height: 55px;
+    width: 210px;
+}
+
+
+footer section .row ul li p {
+    font-size: 14px;
+    letter-spacing: .1px;
+}
+
+.copy {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Ubuntu;
+}
+

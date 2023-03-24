@@ -1,0 +1,106 @@
+* {margin: 0;padding: 0;}
+
+:root {
+    --mainColor:#1B3D59
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.sidebar {
+    background-color: var(--mainColor);
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#users h2,
+#home h2,
+#products h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    color: var(--mainColor);
+}
+
+input {
+    width: 90% !important;
+    margin: 20px auto;
+}
+
+input[type=submit] {
+    background-color: var(--mainColor);
+    color: #fff;
+}
+
+section {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+}
+
+thead { 
+    background-color: var(--mainColor);
+    color: #fff;
+}
+
+table {
+    margin-top: 50px;
+}
+
+section {
+    display: none;
+}
+
+#users {
+    display: block;
+}
+
+.menuBtn {
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+}
+
+#users {
+    display: block;
+}
+#products {
+    display: none;
+}
+
+.addProduct,
+.productList,
+.addUser,
+.usersList {
+    display: none;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons button {
+    background: transparent;
+    color: #000;
+    text-decoration: none;
+    margin: 10px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+}
+
+.active {
+    color: darkred !important;
+}
+

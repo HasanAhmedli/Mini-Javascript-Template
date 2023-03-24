@@ -1,0 +1,27 @@
+.color-mainColor {
+    color: #79b38a;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.badge {
+    font-size: 8px !important;
+}
+
+.f-16 {
+    font-size: 16px;
+}
+
+.color-g {
+    color: gray;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
